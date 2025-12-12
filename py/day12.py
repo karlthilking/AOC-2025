@@ -9,7 +9,7 @@ def part1(shapes, regions):
 			for shape, count in enumerate(counts):
 				sz = shapes[str(shape)]
 				space += (sz * int(count))
-			if space * 1.3 < area:
+			if space < area:
 				total += 1
 	return total
 
